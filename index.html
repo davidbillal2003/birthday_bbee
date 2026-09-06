@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff5f7">
+  <title>For Bbee ❤️ | Happy Birthday</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="hearts-container"></div>
+  <canvas id="confetti-canvas"></canvas>
+
+  <div id="opening" class="opening">
+    <div class="opening-content">
+      <div class="tiny-heart">♡</div>
+      <p class="eyebrow">A little something for you</p>
+      <h1>Hey, Bbee...</h1>
+      <p class="opening-subtitle">I made this little corner of the internet just for you.</p>
+      <button id="open-btn" class="primary-btn">Open your surprise <span>♥</span></button>
+      <p class="hint">put on your earphones if you want 🎧</p>
+    </div>
+  </div>
+
+  <main id="main-content" class="hidden">
+    <section class="hero section">
+      <div class="hero-glow"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">September 8 • A special day</p>
+        <h1>Happy Birthday,<br><em>Mira Aulia Safitri</em> <span>♡</span></h1>
+        <p class="hero-copy">For the girl I call <strong>Bbee</strong>.</p>
+        <a href="#countdown" class="scroll-link">scroll down ↓</a>
+      </div>
+    </section>
+
+    <section id="countdown" class="section countdown-section">
+      <div class="container reveal">
+        <p class="eyebrow">Until your special day</p>
+        <h2>Counting down to <em>you</em> 🎂</h2>
+        <div id="countdown-grid" class="countdown-grid">
+          <div class="time-box"><span id="days">00</span><small>Days</small></div>
+          <div class="time-box"><span id="hours">00</span><small>Hours</small></div>
+          <div class="time-box"><span id="minutes">00</span><small>Minutes</small></div>
+          <div class="time-box"><span id="seconds">00</span><small>Seconds</small></div>
+        </div>
+        <div id="birthday-message" class="birthday-message hidden">
+          <div class="cake">🎂</div>
+          <h3>IT'S YOUR BIRTHDAY! 🎉</h3>
+          <p>Today is all about you, Bbee.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section story-section">
+      <div class="container narrow reveal">
+        <p class="eyebrow">A little story about us</p>
+        <h2>It didn't start <em>two months ago.</em></h2>
+        <div class="letter-card">
+          <p>Kita sebenarnya sudah lama saling kenal. Tapi ternyata, ada cerita yang baru benar-benar dimulai sekitar dua bulan yang lalu.</p>
+          <p>Lucu ya? Kadang seseorang sudah ada cukup lama di hidup kita, lalu tiba-tiba kita melihatnya dari sudut pandang yang berbeda.</p>
+          <p>Dan sekarang, aku bersyukur bisa memanggil kamu <strong>Bbee</strong>.</p>
+          <div class="signature">— dari aku, untuk kamu ♡</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section memories-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Our little memories</p>
+          <h2>Moments I want to <em>keep.</em> 📸</h2>
+        </div>
+        <div class="gallery">
+          <button class="photo-card photo-1 reveal" data-full="images/photo1.jpeg"><img src="images/photo1.jpeg" alt="Memory 1" onerror="this.src='https://placehold.co/800x1000/f8e6eb/7b4a59?text=Your+Photo+1'"></button>
+          <button class="photo-card photo-2 reveal" data-full="images/photo2.jpeg"><img src="images/photo2.jpeg" alt="Memory 2" onerror="this.src='https://placehold.co/800x1000/f8e6eb/7b4a59?text=Your+Photo+2'"></button>
+          <button class="photo-card photo-3 reveal" data-full="images/photo3.jpeg"><img src="images/photo3.jpeg" alt="Memory 3" onerror="this.src='https://placehold.co/800x1000/f8e6eb/7b4a59?text=Your+Photo+3'"></button>
+          <button class="photo-card photo-4 reveal" data-full="images/photo4.jpeg"><img src="images/photo4.jpeg" alt="Memory 4" onerror="this.src='https://placehold.co/800x1000/f8e6eb/7b4a59?text=Your+Photo+4'"></button>
+          <button class="photo-card photo-5 reveal" data-full="images/photo5.jpeg"><img src="images/photo5.jpeg" alt="Memory 5" onerror="this.src='https://placehold.co/800x1000/f8e6eb/7b4a59?text=Your+Photo+5'"></button>
+          <button class="photo-card photo-6 reveal" data-full="images/photo6.jpeg"><img src="images/photo6.jpeg" alt="Memory 6" onerror="this.src='https://placehold.co/800x1000/f8e6eb/7b4a59?text=Your+Photo+6'"></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section love-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Things I love about you</p>
+          <h2>There are more than <em>these.</em> 🫶</h2>
+          <p>Tap each card. I left something behind for you.</p>
+        </div>
+        <div class="love-grid">
+          <button class="love-card reveal"><span>01</span><strong>Your stories 🎧</strong><small>tap me</small><div class="hidden-note">Aku suka setiap kali kita ketemu dan kamu mulai cerita. Entah cerita penting, random, atau sesuatu yang sederhana... aku selalu enjoy mendengarnya.</div></button>
+          <button class="love-card reveal"><span>02</span><strong>You understand me 🤍</strong><small>tap me</small><div class="hidden-note">Aku memang bukan orang yang paling banyak bicara. Kadang aku lebih nyaman mendengarkan. Dan kamu selalu bisa mengerti itu.</div></button>
+          <button class="love-card reveal"><span>03</span><strong>You care 🫶</strong><small>tap me</small><div class="hidden-note">Aku paling menghargai caramu peduli, terutama ketika kamu selalu perhatian sama kondisi dan kesehatanku.</div></button>
+          <button class="love-card reveal"><span>04</span><strong>Your little things ✨</strong><small>tap me</small><div class="hidden-note">Hal-hal kecil yang mungkin menurut kamu biasa saja, sering kali justru jadi hal yang aku ingat.</div></button>
+          <button class="love-card reveal"><span>05</span><strong>Simply... you ❤️</strong><small>tap me</small><div class="hidden-note">Aku nggak tahu bagaimana menjelaskannya dengan sempurna. Tapi aku senang kamu ada.</div></button>
+          <button class="love-card reveal"><span>06</span><strong>Us 🌙</strong><small>tap me</small><div class="hidden-note">Baru sekitar dua bulan, tapi semoga ini baru awal dari banyak cerita yang akan kita punya.</div></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section game-section">
+      <div class="container narrow">
+        <div class="section-heading reveal">
+          <p class="eyebrow">A tiny game</p>
+          <h2>How well do you know <em>us?</em> 👀</h2>
+        </div>
+        <div id="quiz" class="quiz-card reveal">
+          <div class="quiz-progress"><span id="quiz-progress-bar"></span></div>
+          <p id="question-number" class="eyebrow">Question 1 / 5</p>
+          <h3 id="question-text"></h3>
+          <div id="answers" class="answers"></div>
+          <p id="quiz-feedback" class="quiz-feedback"></p>
+        </div>
+        <div id="quiz-result" class="quiz-card result-card hidden">
+          <div class="result-heart">♡</div>
+          <p class="eyebrow">You finished!</p>
+          <h3 id="score-text"></h3>
+          <p id="result-message"></p>
+          <button id="restart-quiz" class="secondary-btn">Play again</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section final-section">
+      <div class="container narrow reveal">
+        <p class="eyebrow">One last thing...</p>
+        <h2>I have one more thing <em>for you.</em> 💌</h2>
+        <button id="final-btn" class="envelope-btn" aria-label="Open final surprise">
+          <span class="envelope">✉</span>
+          <small>Open my final surprise</small>
+        </button>
+      </div>
+    </section>
+
+    <section id="final-letter" class="final-letter hidden">
+      <div class="final-overlay"></div>
+      <div class="final-card">
+        <button id="close-letter" class="close-btn">×</button>
+        <p class="eyebrow">For my Bbee</p>
+        <h2>Happy Birthday, <em>sayang.</em> ❤️</h2>
+        <div class="final-copy">
+          <p>Mungkin hubungan kita baru berjalan sekitar dua bulan, tapi aku bersyukur karena ternyata dari sekian banyak orang yang bisa aku temui, aku dipertemukan dengan kamu.</p>
+          <p>Aku suka mendengarkan semua cerita kamu. Aku suka ketika kamu care sama aku. Dan aku suka bagaimana kamu selalu berusaha mengerti aku, bahkan ketika aku sendiri kadang nggak banyak bicara.</p>
+          <p>Di umur kamu yang baru ini, aku cuma berharap kamu selalu sehat, bahagia, dan bisa mendapatkan hal-hal baik yang kamu inginkan.</p>
+          <p>Semoga nanti kita punya lebih banyak cerita yang bisa kita ingat bersama.</p>
+          <p class="final-bold">Happy Birthday, Bbee. ❤️</p>
+          <p class="signature">— someone who really enjoys listening to your stories.</p>
+        </div>
+        <div class="question-final">
+          <p>I have one more question...</p>
+          <h3>Will you make more memories with me?</h3>
+          <button id="yes-btn" class="primary-btn">YES ❤️</button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      Made with love, just for Bbee ♡
+    </footer>
+  </main>
+
+  <div id="lightbox" class="lightbox hidden">
+    <button id="lightbox-close" class="close-btn">×</button>
+    <img id="lightbox-img" src="" alt="Full memory">
+  </div>
+
+  <button id="music-btn" class="music-btn" aria-label="Play music">♫</button>
+  <audio id="bg-music" loop>
+    <source src="audio/birthday-song.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
